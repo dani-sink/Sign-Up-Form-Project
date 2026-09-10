@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('assets/fonts/Norse.woff2') format('woff2'),
+        url('assets/fonts/Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.bkg-section {
+    background-image: url("assets/images/bkg.jpg");
+    background-size: cover;
+    width: 60%;
+    position: relative;
+}
+
+.bkg-footer-container {
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    left: 175px
+}
+
+.bkg-footer-container a {
+    text-decoration-color: white;
+    color: white;
+}
+
+.bkg-footer-container a:hover,
+.bkg-footer-container a:focus {
+    color: #cccccc;
+}
+
+.bkg-section > p a:hover {
+    text-decoration-color: #005daa;
+    color: #005daa;
+}
+
+.logo-bkg-container {
+    display: flex;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    padding: 1em 0;
+}
+
+.logo-bkg-container p {
+    font-family: "Norse";
+    font-weight: bolder;
+    font-size: 6em;
+    color: white;
+}
+
+.logo-bkg-container img {
+    width: 100px;
+    height: auto;
+}
+
+.form-section {
+    background-color: #EAEDF0;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 3em; */
+    justify-content: center;
+}
+
+.form-title-container {
+    width: 80%;
+    padding: 0 3em;
+}
+
+.form-title-container > p {
+    color: #222222;
+    text-align: center;
+    width: 100%;
+    font-size: 1.7em;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+    text-align: start;
+}
+
+#title-announcer {
+    margin-bottom: 1em;
+}
+
+#title-hook {
+    margin-bottom: 2em;
+}
+
+
+
+form h2 {
+    margin: 1em 0;
+}
+
+.form-input-container {
+    padding: 1em 3em;
+    background-color: #fff;
+    display: block;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.form-input-container > div > label {
+    font-weight: 400;
+}
+
+.input-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.input-container > div {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.input-container label {
+    font-weight: 700;
+    font-size: 0.8em;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(60, 58, 58, 0.9);
+    letter-spacing: 1px;
+    
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"]
+ {
+    width: 75%;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 1.1em;
+    appearance: none;
+}
+
+input[type="text"]:user-invalid,
+input[type="tel"]:user-invalid,
+input[type="email"]:user-invalid,
+input[type="password"]:user-invalid
+ {
+    outline: none;
+    border: 2px solid #D55C5F;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus
+ {
+    outline: none;
+    border: 2px solid #005daa;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.form-footer {
+    padding: 1em 3em;
+    width: 100%;
+}
+
+.form-footer > button {
+    margin: 2em 0;
+    width: 30%;
+    padding: 1em 2em;
+    border-radius: 5px;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.form-footer > button:hover,
+.form-footer > button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.form-footer p a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bolder;
+}
+
+.form-footer p a:hover,
+.form-footer p a:focus {
+    text-decoration: underline;
+}
